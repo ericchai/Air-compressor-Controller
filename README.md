@@ -70,7 +70,9 @@ Air-compressor Controller with gps and gprs
                        如果20s没按键，退出设置状态，到运行态显示规则。
                        
 四：键盘设计
+
     五个键   "set"  "<"  "^"  ">"  "ok"
+    
     按键规格：
     1.长按set键10s，设置值恢复缺省
     2.短按set，进入值设置，< >为左右移位 ^为数字加1，到9变0，ok为确认。
