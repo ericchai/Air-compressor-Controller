@@ -52,4 +52,25 @@ Air-compressor Controller with gps and gprs
 
 三：显示设计
 
-    1.
+    1.运行态的显示规则：判断是否到了阶梯规定时间，如果是的话，1602显示 lock，please put pwd：
+                                                          每次输入一位数字，5位，正确解码。
+                                                  如果否的话，1602显示 time：  T:OK  F1：0K F2：0K(正常OK，故障ERR)。
+                                      
+                                
+    2.设置状态的显示： set键 please put cpwd：           按OK键 
+                       在set键，time：                   按OK键
+                       在set键，S1p：                    按OK键
+                       在set键，S2p：                    按OK键
+                       在set键，cp1：                    按OK键
+                       在set键，cp2：                    按OK键
+                       在set键，cp3：                    按OK键
+                       。。。。。。。。。。。。。。。。。。。。。
+                       在set键，cp20：                   按OK键
+                       
+                       如果20s没按键，退出设置状态，到运行态显示规则。
+                       
+四：键盘设计
+    五个键   "set"  "<"  "^"  ">"  "ok"
+    按键规格：
+    1.长按set键10s，设置值恢复缺省
+    2.短按set，进入值设置，< >为左右移位 ^为数字加1，到9变0，ok为确认。
